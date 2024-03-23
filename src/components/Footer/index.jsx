@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import { Link as RouterLink } from 'react-router-dom';
 
 import './style.scss';
 
@@ -36,11 +37,11 @@ const Footer = () => {
                 <div className="footer__explore">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><Link to="/about" className="nav-link">A propos</Link></li>
-                        <li><a href="#skills">Mes compétences</a></li>
-                        <li><a href="#projects">Mes projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><Link smooth to="#home">Accueil</Link></li>
+                        <li><RouterLink to="/about" className="nav-link">A propos</RouterLink></li>
+                        <li><Link smooth to="#skills">Mes compétences</Link></li>
+                        <li><Link smooth to="#projects">Mes projets</Link></li>
+                        <li><Link smooth to="#contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>

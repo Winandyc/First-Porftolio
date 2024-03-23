@@ -10,8 +10,8 @@ const Contact = () => {
         setShowModal(true);
         setTimeout(() => {
             setShowModal(false);
-            event.target.reset(); // Réinitialise le formulaire
-        }, 2000); // Ferme la modale après 1 seconde
+            event.target.reset();
+        }, 2000);
     };
 
     return (

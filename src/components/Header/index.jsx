@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import { Link as RouterLink } from 'react-router-dom';
 
 import './style.scss';
 
@@ -9,11 +10,11 @@ const Header = () => {
             <div className="brand">Winandy Christopher</div>
             <nav className="nav">
                 <ul>
-                    <li><a href="#home" className="nav-link">Accueil</a></li>
-                    <li><Link to="/about" className="nav-link">A propos</Link></li>
-                    <li><a href="#skills" className="nav-link">Mes compétences</a></li>
-                    <li><a href="#projects" className="nav-link">Mes projets</a></li>
-                    <li><a href="#contact" className="nav-link">Contact</a></li>
+                    <li><Link to="#home" className="nav-link">Accueil</Link></li>
+                    <li><RouterLink to="/about" className="nav-link">A propos</RouterLink></li>
+                    <li><Link to="#skills" className="nav-link">Mes compétences</Link></li>
+                    <li><Link to="#projects" className="nav-link">Mes projets</Link></li>
+                    <li><Link to="#contact" className="nav-link">Contact</Link></li>
                 </ul>
             </nav>
         </header>

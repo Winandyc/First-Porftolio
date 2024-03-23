@@ -1,19 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+import AnimatedBackground from '../../components/AnimatedBackground';
 
 import './style.scss';
 
 const About = () => {
     const handleGoBack = () => {
-        // Redirection vers la page d'accueil lorsque la "maison" est cliquée
-        window.location.href = '/';
+        <RouterLink to="/home" className="nav-link">A propos</RouterLink>
     };
 
     return (
         <div id="about" className="about">
-            <Link to="/" className="go-back" onClick={handleGoBack}>
+            <AnimatedBackground />
+            {/* // Redirection vers la page Home lorsque la "maison" est cliquée */}
+            <Link to="/home" className="go-back" onClick={handleGoBack}>
                 <FontAwesomeIcon icon={faHome} />
             </Link>
 
