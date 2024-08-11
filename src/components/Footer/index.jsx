@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer__content">
                 {/* Image */}
                 <div className="footer__image">
-                    <img src={import.meta.env.VITE_PREFIX + "images/footer/footer.img.jpg"} alt="" />
+                    <img src={import.meta.env.VITE_PREFIX + "./images/footer/footer.img.jpg"} alt="" />
                 </div>
                 {/* Logos LinkedIn et Github */}
                 <div className="footer__social">

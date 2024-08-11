@@ -3,7 +3,7 @@ import ButtonNavigate from '../../components/ButtonNavigate';
 
 import './style.scss';
 
-const image = import.meta.env.VITE_PREFIX + 'images/FirstPageImg/galaxy.webp';
+const image = import.meta.env.VITE_PREFIX + './images/FirstPageImg/galaxy.webp';
 const FirstPage = () => {
   useEffect(() => {
     // Ajoute la classe spécifique au corps du document

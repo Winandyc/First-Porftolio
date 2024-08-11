@@ -41,7 +41,7 @@ const About = () => {
             </div>
 
             <div className="about__details">
-                <img src={import.meta.env.VITE_PREFIX + "images/me/me.about.webp"} alt="Selfie de Winandy Christopher" className="about__image" />
+                <img src={import.meta.env.VITE_PREFIX + "./images/me/me.about.webp"} alt="Selfie de Winandy Christopher" className="about__image" />
             </div>
         </div>
     );
