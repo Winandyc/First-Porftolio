@@ -1,0 +1,73 @@
+.presentation {
+  margin: 80px 70px 0;
+
+  .presentation__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .presentation__image {
+      img {
+        width: 220px;
+        height: auto;
+        border-radius: 80%;
+        margin-right: 20px;
+
+        @media screen and (max-width: 767px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .presentation__text {
+      flex: 1;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: whitesmoke;
+      }
+
+      .download-cv {
+        margin-top: 40px;
+        color: white;
+
+        .download-button {
+          background-color: rgba(158, 158, 158, 0.2);
+          color: #ffffff;
+          border: none;
+          border-radius: 20px;
+          padding: 10px 20px;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          transition:
+            color 0.3s,
+            box-shadow 0.3s;
+
+          &:hover {
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          }
+
+          .fa-download {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+  }
+}
