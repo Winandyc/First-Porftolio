@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Winandyc.github.io/portfoliov1/",
+  "homepage": "https://Winandyc.github.io/First-Portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build --base=/Portfolio.p12/ --mode=prod",
+    "build": "vite build --base=/First-Portfolio/ --mode=prod",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
