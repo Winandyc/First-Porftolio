@@ -7,7 +7,10 @@ const Presentation = () => {
         <div className="presentation">
             <div className="presentation__content">
                 <div className="presentation__image">
-                    <img src={import.meta.env.VITE_PREFIX + "images/me/me.home.webp"} alt="Selfie de Winandy Christopher" />
+                    <img
+                        src={import.meta.env.VITE_PREFIX + "images/me/me.home.webp"}
+                        alt="Selfie de Winandy Christopher"
+                    />
                 </div>
                 <div className="presentation__text">
                     <h2>Bienvenue sur mon portfolio !</h2>
@@ -17,7 +20,11 @@ const Presentation = () => {
                         engageantes.
                     </p>
                     <div className="download-cv">
-                        <a href="/src/assets/cv2024.pdf" download className="download-button">
+                        <a
+                            href="/src/assets/cvdevalternance.pdf"
+                            download
+                            className="download-button"
+                        >
                             <i className="fa fa-download"></i>
                             <span>Téléchargez mon CV !</span>
                         </a>
